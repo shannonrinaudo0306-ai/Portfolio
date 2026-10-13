@@ -9,12 +9,15 @@ re<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;500;800&family=Newsreader:ital@0;1&display=swap" rel="stylesheet">
 
 <style>
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;padding:60px 0 44px}
-.hero svg.hull{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero svg.hull{position:absolute;inset:0;width:100%;height:100%;opacity:.7}
 .hero svg .st{fill:none;stroke:#3a5568;stroke-width:1;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3.2s ease-out forwards}
 .hero svg .st.k{stroke:#00b7ff;stroke-width:1.6}
+.hero svg .fl{fill:none;stroke:#00b7ff;stroke-width:2.5;stroke-linecap:round;stroke-dasharray:60 140;opacity:0;animation:flow var(--t,4s) linear infinite,show 1s 3s forwards}
+.hero svg .fl.w{stroke:#E8EEF0;stroke-width:1.5;--t:6s}
 @keyframes draw{to{stroke-dashoffset:0}}
-.hero > *:not(svg){position:relative}
+@keyframes flow{to{stroke-dashoffset:-200}}
+@keyframes show{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){.hero svg .st{animation:none;stroke-dashoffset:0}.hero svg .fl{animation:none;opacity:0}}
 
 	
 /* ===== COULEURS ET POLICES (modifiables ici, utilisées partout) ===== */
@@ -149,13 +152,19 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
   <!-- Dessin de fond : une coque simplifiée en traits (modifiez les nombres pour changer la forme) -->
 <div class="hero">
 <svg class="hull" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
-<path class="st k" d="M-20 470 C200 400 520 360 900 330 C1040 320 1140 300 1230 250"/>
-<path class="st" d="M-20 470 C250 560 600 600 900 520 C1050 480 1150 380 1230 250"/>
-<path class="st" d="M-20 520 C300 620 650 650 950 560"/>
-<path class="st" d="M120 445 C300 540 560 560 780 500"/>
-<path class="st" d="M300 410 C420 480 600 500 720 470"/>
-<path class="st" d="M560 335 L560 40 L900 320"/>
-<path class="st" d="M560 335 L560 90 L360 330"/>
+<defs>
+<path id="a" d="M-20 470 C200 400 520 360 900 330 C1040 320 1140 300 1230 250"/>
+<path id="b" d="M-20 470 C250 560 600 600 900 520 C1050 480 1150 380 1230 250"/>
+<path id="c" d="M-20 520 C300 620 650 650 950 560"/>
+<path id="d" d="M120 445 C300 540 560 560 780 500"/>
+<path id="e" d="M300 410 C420 480 600 500 720 470"/>
+<path id="f" d="M560 335 L560 40 L900 320"/>
+<path id="g" d="M560 335 L560 90 L360 330"/>
+</defs>
+<use href="#a" class="st k"/><use href="#b" class="st"/><use href="#c" class="st"/>
+<use href="#d" class="st"/><use href="#e" class="st"/><use href="#f" class="st"/><use href="#g" class="st"/>
+<use href="#a" class="fl"/><use href="#b" class="fl"/><use href="#f" class="fl"/>
+<use href="#c" class="fl w"/><use href="#d" class="fl w"/><use href="#e" class="fl w"/><use href="#g" class="fl w"/>
 </svg>
 <div class="centre">
     <h1>Shannon Rinaudo</h1>
