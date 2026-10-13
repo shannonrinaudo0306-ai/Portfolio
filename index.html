@@ -9,6 +9,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@300;500;800&family=Newsreader:ital@0;1&display=swap" rel="stylesheet">
 
 <style>
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;padding:60px 0 44px}
+.hero svg.hull{position:absolute;inset:0;width:100%;height:100%;opacity:.55}
+.hero svg .st{fill:none;stroke:#3a5568;stroke-width:1;stroke-dasharray:1600;stroke-dashoffset:1600;animation:draw 3.2s ease-out forwards}
+.hero svg .st.k{stroke:#00b7ff;stroke-width:1.6}
+@keyframes draw{to{stroke-dashoffset:0}}
+.hero > *:not(svg){position:relative}
+
+	
 /* ===== COULEURS ET POLICES (modifiables ici, utilisées partout) ===== */
 :root{
   --fond:#050A0F;      /* noir bleuté du fond */
@@ -122,6 +130,22 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
 <body>
 
+	<div class="hero">
+<svg class="hull" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+<path class="st k" d="M-20 470 C200 400 520 360 900 330 C1040 320 1140 300 1230 250"/>
+<path class="st" d="M-20 470 C250 560 600 600 900 520 C1050 480 1150 380 1230 250"/>
+<path class="st" d="M-20 520 C300 620 650 650 950 560"/>
+<path class="st" d="M120 445 C300 540 560 560 780 500"/>
+<path class="st" d="M300 410 C420 480 600 500 720 470"/>
+<path class="st" d="M560 335 L560 40 L900 320"/>
+<path class="st" d="M560 335 L560 90 L360 330"/>
+</svg>
+<div class="w">
+  <h1>Votre titre</h1>
+  <p>Votre texte d'accroche</p>
+</div>
+</div>
+	
 <!-- ============ MENU ============ -->
 <nav>
   <div class="centre">
