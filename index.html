@@ -129,8 +129,9 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
     <div class="liens">
       <!-- href="#xxx" = saute vers l'élément dont l'id est "xxx" (sans espace dans l'id) -->
       <a href="#analyses">Analyses numériques</a>
-      <a href="#competences">Compétences</a>
       <a href="#projets">Projets</a>
+      <a href="#scolaire">Scolaire</a>
+      <a href="#competences">Compétences</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
@@ -146,8 +147,8 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
   </svg>
   <div class="centre">
     <h1>Shannon Rinaudo</h1>
-    <p>Calcul par éléments finis, dimensionnement et conception mécanique.</p>
-    <a class="bouton" href="#projets">Voir mes projets</a>
+    <p>Ingénieur diplômé en mécanique de Polytech Lyon, avec une spécialisation en aéronautique réalisée à ÉTS Montréal, je possède une expérience en calcul de structures, en éléments finis et en conception mécanique acquise au cours de mon crusus scolaire, mes différents stages et expériences professionnelles. 
+	    <br>Je souhaite aujourd’hui mettre ces compétences au service de projets industriels ambitieux, en contribuant au développement, au dimensionnement ainsi qu’à l’optimisation de solutions techniques performantes.</p>
     <div class="legende"><i></i><div><span>0</span><span>Contrainte max</span></div></div>
   </div>
 </header>
@@ -166,7 +167,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
       <!-- CARTE 1 (large) : href="#projet1" ouvre le bloc id="projet1" plus bas -->
       <a class="tuile" href="#projet1">
-        <div class="im"><img src="images/press 2.GIF" alt="Calcul linéaire statique"></div> <!-- image -->
+        <div class="im"><img src="images/press-2.GIF" alt="Calcul linéaire statique"></div> <!-- image -->
         <div class="tx">
           <span>Statique linéaire</span>                 <!-- étiquette -->
           <h3>Calcul linéaire statique</h3>              <!-- titre -->
@@ -202,7 +203,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
       <!-- CARTE 1 -->
       <a class="carte" href="#projet1">
-        <div class="vignette"><img src="images/press 2.GIF" alt="Cuve sous pression"></div>
+        <div class="vignette"><img src="images/press-2.GIF" alt="Cuve sous pression"></div>
         <div class="texte">
           <span>Calcul EF · 2026</span>
           <h3>Analyse d'une cuve sous pression</h3>
@@ -212,7 +213,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
       <!-- CARTE 2 -->
       <a class="carte" href="#projet2">
-        <div class="vignette"><img src="images/Climate Impulse.png" alt="Climate Impulse"></div>
+        <div class="vignette"><img src="images/Climate-Impulse.png" alt="Climate Impulse"></div>
         <div class="texte">
           <span>Conception · 2025</span>
           <h3>Climate Impulse</h3>
@@ -234,7 +235,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
       <!-- METAL EN FEUILLE -->
       <a class="carte" href="#Métal-feuille">
-        <div class="vignette"><img src="images/Pièce métal feuille.tiff" alt="Détection de pièce en mètal en feuille"></div>
+        <div class="vignette"><img src="images/Pièce-métal-feuille.tiff" alt="Détection de pièce en mètal en feuille"></div>
         <div class="texte">
           <span>Ecole de Technologie Supérieure (ETS) montréal</span>
           <h3>Reconnaissance de pièces de type métal en feuille</h3>
@@ -250,15 +251,31 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 
 
       <!-- PROBLEME A N CORPS -->
-      <a class="carte" href="#Problème-N-corps">
+      <a class="carte" href="#probleme-N-corps">
         <div class="vignette"><img src="images/Probleme-a-3-corps.jpeg" alt="Problème à N corps"></div>
         <div class="texte">
           <span>Polytech Lyon</span>
           <h3>Problème à N corps</h3>
-          <p>Simulation du problème à N corps et moodélisation des interactions gravitationnels du système solaire. Projet réaliser en C++.
+          <p>Simulation du problème à N corps et moodélisation des interactions gravitationnels du système solaire. <br>Projet réaliser en C++ et Python.
           </p>
         </div>
       </a>
+      
+      
+      
+      
+            <!-- ELEMENTS FINIS - DIFFUSION DE CHALEUR -->
+      <a class="carte" href="#diffusion_chaleur">
+        <div class="vignette"><img src="images/Diffusion-de-chaleur.png" alt="Diffusion de chaleur"></div>
+        <div class="texte">
+          <span>Polytech Lyon</span>
+          <h3>Mise en place de la méthodes des éléments finis.</h3>
+          <p>Mise en place de la méthode des éléments finis pour la résolution de l'équation de diffusion de chaleur mono et bidimensionnelle. <br>Projet réalisé sur Matlab et Python.
+          </p>
+        </div>
+      </a>
+      
+      
 
 
     </div>
@@ -275,9 +292,10 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
     <div class="entete"><h2>Compétences</h2></div>
     <div class="competences">
       <!-- Un <div> par compétence : titre + phrase -->
-      <div><h3>Éléments finis</h3><p>Maillage, conditions aux limites, post-traitement.</p></div>
-      <div><h3>CAO</h3><p>Modélisation 3D et mises en plan.</p></div>
-      <div><h3>Matériaux</h3><p>Choix et critères de dimensionnement.</p></div>
+      <div><h3>Esprit d'équipe</h3><p>S'adapter rapidement à l'environnement et aux méthodes de travail.</p></div>
+      <div><h3>Relation client</h3><p>Echanger et communiquer avec la clientèle.</p></div>
+      <div><h3>Calculs numériques</h3><p>Faire des hypothèses de dimensionnement, utiliser les normes et codes de dimensionnement</p></div>
+      <div><h3>Rédaction de documents techniques</h3><p>Rédiger des documents techniques tels que des notes de calcul ou bien des plans techniques.</p></div>
     </div>
   </div>
 </section>
@@ -306,7 +324,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 <!-- ============ PAGE CUVE SOUS PRESSION ============ -->
 <div class="projet" id="projet1">
   <div class="centre">
-    <a class="retour" href="#projets">← Retour aux projets</a> <!-- referme la page projet -->
+    <a class="retour" href="#projets">← Retour au menu principal</a> <!-- referme la page projet -->
     <h1>Cuve sous pression</h1>
     <p class="intro">Résumé du projet en une ou deux phrases.</p>
 
@@ -337,7 +355,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 <!-- ============ PAGE PROJET CLIMATE IMPULSE ============ -->
 <div class="projet" id="projet2">
   <div class="centre">
-    <a class="retour" href="#projets">← Retour aux projets</a>
+    <a class="retour" href="#projets">← Retour au menu principal</a>
     <h1>Climate Impulse</h1>
     <p class="intro">Projet d'avion à hydrogène.</p>
 
@@ -369,7 +387,7 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 <!-- ============ PAGE PROJET METAL EN FEUILLE ============ -->
 <div class="projet" id="Métal-feuille">
   <div class="centre">
-    <a class="retour" href="#scolaire">← Retour aux projets</a>
+    <a class="retour" href="#scolaire">← Retour au menu principal</a>
     <h1>Reconnaissance de pièces de type métal en feuille</h1>
     <p class="intro">Projet réalisée en C# sur Visual Studio associé à Solidworks.</p>
 
@@ -419,49 +437,59 @@ format exploitable. </p>
 
 
 
-<div class="projet" id="Problème-N-corps">
+<div class="projet" id="probleme-N-corps">
   <div class="centre">
-    <a class="retour" href="#scolaire">← Retour aux projets</a>
-    <h1>Reconnaissance de pièces de type métal en feuille</h1>
-    <p class="intro">Projet réalisée en C# sur Visual Studio associé à Solidworks.</p>
-
+    <a class="retour" href="#scolaire">← Retour au menu principal</a>
+    <h1>Problème à N corps</h1>
+    <p class="intro">Ce projet présente la simulation numérique de l'interaction gravitationnelle entre plusieurs corps, du problème à 3 corps jusqu'au système solaire. 
+	    <br>Projet réalisé en C++, avec Python pour la visualisation des trajectoires.</p>
 
     <div class="bloc">
       <h3>Présentation</h3>
-      <p>Ce projet nous met dans le rôle d'un sous-traitant proposant des solutions numériques sur le logiciel SolidWorks afin de simplifier et d'automatiser certaines tâches. 
-	      Nous avons ainsi été fictivement sollicité par un industriel fabriquant des pièces de métal en feuille, qui ne pocède qu'uniquement des machines de pliages, percages et poinçonnages. L'objectif est de trier les pièces recus par le cet industriel afin de déterminer si elles sont réalisable dans son atelier ou pas. </p>
+      <p>Ce projet consiste à simuler numériquement l’interaction gravitationnelle entre plusieurs corps, un problème sans solution exacte dès que plus de deux corps interagissent. Le programme est réalisé en C++ à partir de la loi de la gravitation universelle de Newton, avec Python pour tracer les trajectoires. Il s’appuie sur trois classes : Coordonnees, Vecteur et PointMat. Un schéma d’Euler met à jour la vitesse et la position de chaque astre, et les résultats sont exportés pour être visualisés.</p>
 
-	      
-      <h3>Mise en place</h3>
-      <p>L’interface du programme a été conçue pour offrir une utilisation intuitive et modulaire, adaptée aux
-besoins des utilisateurs. Elle permet de sélectionner des fichiers, de configurer les paramètres d’analyse selon
-les capacités de l’atelier, d’exécuter les vérifications automatiquement et d’exporter les résultats dans un
-format exploitable. </p>
-	      
-	            <div class="images">
-        <figure><img src="images/Metal-en-feuille-interface-graphique.png" alt="Interface graphique"><figcaption>Interface graphique</figcaption></figure>
+      <h3>Résultats</h3>
+      <p>Nous avons d’abord étudié le problème à 3 corps, chaotique : une variation de 2 % de la vitesse initiale change profondément la trajectoire, alors que des conditions parfaitement symétriques donnent des orbites stables. L’outil a ensuite été appliqué au système Terre-Lune puis à l’ensemble du système solaire, où l’impulsion et l’énergie mécanique se conservent bien. Il présente toutefois trois limites : la singularité de la force lorsque deux astres se rejoignent, la simulation en 2D et l’absence d’effets relativistes.</p>
+
+      <div class="images">
+        <figure><img src="images/trois-corps-chaotique.png" alt="Trajectoires chaotiques"><figcaption>Problème à 3 corps (conditions normales)</figcaption></figure>
+        <figure><img src="images/systeme-solaire.png" alt="Système solaire"><figcaption>Simulation du système solaire</figcaption></figure>
       </div>
 
-      <p>Après avoir choisit les paramètres souhaités, les pièces vont être soumise à une série d'algorithme test (épaisseur de la pièces, absence d'angle vifs, rayon de courbure des plis, absence de cycle...). Si un test est validé la pièce passe au test suivant, si un test n'est pas validé, la pièce est catégorisé n'étant pas réalisable en métal en feuille dans l'atelier du client. </p>
 
-      <h3>Conclusion</h3>
-      <p>Notre outil s'est montré performant avec plus de 87% des pièces de notre échantillonnage détécter à juste titre. En revanche, certaine particularité de pièces rendent leur detection particulièrement difficile (pièce extrudée, défaut de géometrie...). </p>
-            <p>Dans l’ensemble, le travail accompli fournit une base pour un outil industriel, tout en ouvrant la voie à de futures améliorations visant à augmenter sa robustesse et sa précision.</p>
-
-	            <div class="images">
-        <figure><img src="images/Metal-en-feuille-interface-termine.png" alt="Analyse terminée"><figcaption>Analyse terminée</figcaption></figure>
-        <figure><img src="images/Piece-extrudee.png" alt="Pièce extrudée"><figcaption>Pièce extrudée</figcaption></figure>
-      </div>
-        
-    <!-- Bouton vers le rapport PDF : même style que "Voir mes projets" (classe bouton) -->
-    <!-- href = chemin du PDF ; target="_blank" l'ouvre dans un nouvel onglet -->
-    <a class="bouton" href="documents/Rapport_finale_Rinaudo_Rinaudo.pdf" target="_blank" rel="noopener">Voir le rapport (PDF)</a>
-  </div>
+      <a class="bouton" href="documents/rapport-n-corps.pdf" target="_blank" rel="noopener">Voir le rapport (PDF)</a>
+    </div>
   </div>
 </div>
 
 
 
+
+
+
+
+
+<div class="projet" id="diffusion_chaleur">
+  <div class="centre">
+    <a class="retour" href="#scolaire">← Retour au menu principal</a>
+    <h1>Mise en place de la méthodes des éléments finis.</h1>
+    <p class="intro">Mise en place de la méthode des éléments finis pour la résolution de l'équation de diffusion de chaleur mono et bidimensionnelle. <br>Projet réalisé sur Matlab et Python.</p>
+
+    <div class="bloc">
+      <h3>Présentation</h3>
+      <p> A remplir </p>
+
+      <h3>Résultats</h3>
+      <p>A remplir</p>
+
+
+
+
+      <a class="bouton" href="documents/TP_MNM-2.pdf" target="_blank" rel="noopener">Voir le rapport (PDF)</a>
+      <a class="bouton" href="documents/TP_MNM-2_partie_2.pdf" target="_blank" rel="noopener">Voir le rapport (PDF)</a>
+    </div>
+  </div>
+</div>
 
 
 
