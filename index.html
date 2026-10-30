@@ -81,13 +81,13 @@ section{padding:clamp(70px,10vw,130px) 0}  /* espace au-dessus et en dessous de 
 
 /* ===== PROJETS : cartes en grille simple ===== */
 .cartes{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.carte{background:var(--carte);border:1px solid var(--trait);border-radius:6px;overflow:hidden;display:block}
+.carte{position:relative;background:var(--carte);border:1px solid var(--trait);border-radius:6px;overflow:hidden;display:block}
 .carte img{width:100%;aspect-ratio:16/10;object-fit:cover;transition:transform .5s}
 .carte:hover img{transform:scale(1.04)}
 .carte .vignette{overflow:hidden}
-.carte .texte{padding:22px 24px 26px;border-bottom:4px solid transparent}
-/*.carte:hover .texte{border-image:var(--arcenciel) 1} /* trait coloré au survol */
+.carte .texte{padding:22px 24px 26px}
 .carte:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--arcenciel);transform:scaleX(0);transform-origin:left;transition:transform .5s} /* trait coloré caché... */
+.carte:hover:after{transform:scaleX(1)} /* ...qui se déploie au survol */
 .carte span{font:300 14px var(--titre);color:var(--gris)}
 .carte h3{font-size:24px;font-weight:500;margin:8px 0 10px}
 .carte p{margin:0;color:#b3c2cb;font-size:16px}
