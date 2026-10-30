@@ -86,7 +86,8 @@ section{padding:clamp(70px,10vw,130px) 0}  /* espace au-dessus et en dessous de 
 .carte:hover img{transform:scale(1.04)}
 .carte .vignette{overflow:hidden}
 .carte .texte{padding:22px 24px 26px;border-bottom:4px solid transparent}
-.carte:hover .texte{border-image:var(--arcenciel) 1} /* trait coloré au survol */
+/*.carte:hover .texte{border-image:var(--arcenciel) 1} /* trait coloré au survol */
+.carte:after{content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;background:var(--arcenciel);transform:scaleX(0);transform-origin:left;transition:transform .5s} /* trait coloré caché... */
 .carte span{font:300 14px var(--titre);color:var(--gris)}
 .carte h3{font-size:24px;font-weight:500;margin:8px 0 10px}
 .carte p{margin:0;color:#b3c2cb;font-size:16px}
@@ -168,7 +169,6 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
 	    <br>Je souhaite aujourd’hui mettre ces compétences au service de projets industriels ambitieux, en contribuant au développement, au dimensionnement ainsi qu’à l’optimisation de solutions techniques performantes.</p>
     <div class="legende"><i></i><div><span>0</span><span>Contrainte max</span></div></div>
 </div>
-</div>
 </header>
 
 <!-- ============ ANALYSES NUMÉRIQUES (grille 7+5 puis 5+7) ============ -->
@@ -178,7 +178,6 @@ figcaption{font:italic 15px var(--corps);color:var(--gris);margin-top:8px}
     <!-- En-tête : titre à gauche, phrase à droite -->
     <div class="tete">
       <h2>Analyses numériques</h2>
-      <p>Chaque analyse s'ouvre sur sa page : modèle, déformée et contraintes.</p>
     </div>
 
     <div class="grille">
